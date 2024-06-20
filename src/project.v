@@ -24,4 +24,16 @@ module tt_um_example (
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, clk, rst_n, 1'b0};
 
+    tt_um_threeadder(
+    .clk(clk),
+    .reset(rst_n),
+    .a(uio_in),
+    .b(uio_in),
+    .c(uio_in)
+    .x(uo_out),
+    .y(uo_out),
+    .z(uo_out),
+    .f(uo_out)
+    );
+    
 endmodule
