@@ -26,13 +26,13 @@ module tt_um_example (
     tt_um_threeadder(
     .clk(clk),
     .reset(rst_n),
-    .a(uio_in),
-    .b(uio_in),
-    .c(uio_in)
-    .x(uo_out),
-    .y(uo_out),
-    .z(uo_out),
-    .f(uo_out)
+        .a(uio_in [0]),
+        .b(uio_in [0]),
+        .c(uio_in [0])
+        .x(uo_out [0]),
+        .y(uo_out [0]),
+        .z(uo_out [0]),
+        .f(uo_out [0])
     );
     
 endmodule
